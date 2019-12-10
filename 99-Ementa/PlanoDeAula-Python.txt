@@ -1,0 +1,33 @@
+	1.	Aula 001 — 06-11-2019 - 
+	    ▪	função print() - Impressão de texto simples, impressão de múltiplos textos separados por vírgula, impressão de textos e números, impressão de texto com uso de caracter de escape
+	2.	Aula 002 — 07-11-2019 - 
+	    ▪	Variáveis - Variáveis do tipo inteiro, tipo ponto flutuante, tipo string, tipo booleano, impressão de texto usando multiplicação, impressão de múltiplas variáveis e texto utilizando vírgula, concatenação de string utilizando a função format(), concatenação de string utilizando interpolação
+	3.	Aula 003 — 08-11-2019 - 
+	    ▪	Estrutura de decisão utilizando IF, estruturas de decisão utilizando  IF e ELSE
+	    ▪	Operações Matemáticas - Operações matemáticas básicas de soma, subtração, divisão e multiplicação com números inteiros e de ponto flutuante.
+	4.	Aula 004 — 11-11-2019 - 
+	    ▪	Expressões lógicas - Operadores Igual, diferente, maior, menor, maior ou igual, menor ou igual, E, OU, negação(Not), Variáveis booleanos 
+	    ▪	Criação de variáveis booleanas com as palavras chaves True e False, criação de variáveis booleanas através de expressões lógicas 
+	    ▪	Estruturas de decisão 2 -  Estruturas de decisão utilizando IF, ELSE e ELIF. 
+	5.	Aula 005 — 12-11-2019 - 
+	    ▪	Lendo dados - Lendo dados do console com a função INPUT(), Validação de dados do console, convertendo dados de string para inteiro, convertendo dados de string para float, convertendo dados de string para bool
+	6.	Aula 006 — 13-11-2019
+	    ▪	Listas - Criação de listas vazias e com dados iniciais, criação de listas de tipo único, criação de listas com múltiplos tipos de dados, criação de listas com a função INPUT, adicionando dados na lista após sua criação 
+	    ▪	Estrutura de repetição  - Criando estruturas de repetição utilizando o for, utilizando for com a função RANGE(), alterando o incremento padrão da função RANGE(), utilizando for para percorrer lista, problema do uso do for com range em listas, utilizando o foreach para percorrer listas
+	7.	Aula 007 — 14-11-2019
+	    ▪	Dicionários - Criação de dicionários de tipo único, imprimindo dicionários, adicionando dados em um dicionário ja criado, criando uma nova chave dinamicamente, criando dicionários com tipos distintos, dicionários em listas, impressão de dados de um dicionário.
+	8.	Aula 008 — 18-11-2019
+	    ▪	Tuplas
+	9.	Aula 009 — 19-11-2019
+	    ▪	
+	10.	Aula 010 — 20-11-2019
+	    ▪	
+	11.	Aula 011 — 21-11-2019
+	    ▪	
+	12.	Aula 012 — 22-11-2019
+	    ▪	
+	13.	Aula 013 — 25-11-2019
+	14.	Aula 014 — 26-11-2019
+	15.	Aula 015 — 27-11-2019
+	16.	Aula 016 — 28-11-2019
+	17.	Aula 017 — 29-11-2019
