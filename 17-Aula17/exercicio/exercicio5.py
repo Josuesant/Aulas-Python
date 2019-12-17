@@ -5,3 +5,7 @@
 # Na lista deve ter numeros de 1 a 999. Imprima na tela uma mensagem dizendo se a lista está 
 # confrome a especificação ou fora de especificação.
 
+import os
+a = os.system('dir')
+
+print(type(a))

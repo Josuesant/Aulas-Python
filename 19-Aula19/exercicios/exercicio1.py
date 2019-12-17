@@ -17,26 +17,7 @@ cadastroHBSIS = ['nome',   ['Alex'   ,'Paulo'  ,'Pedro'  ,'Mateus' ,'Carlos' ,'J
 
 # 2 - usando o for, imprima todos nomes um abaixo do outro
 #
-# 3 - Usando a indexação faça uma lista com 3 dicionários contendo os dados 
+# 3 - Usando a indexação faça uma lista com 3 bibliotecas contendo os dados 
 # do Mateus, Paulo # e João contendo
 # como chaves: nome, email, idade, telefone (nesta  sequencia)
 
-campos = cadastroHBSIS[0::2]
-dados = cadastroHBSIS[1::2]
-
-lista = [{}, {}, {}]
-
-contador_campo = 0
-for i in dados:
-    lista_dados = i [1::2]
-    contador =0
-
-    for lista_campos in lista_dados:
-        dic = lista[contador]
-        dic[campos[contador_campo]] = lista_campos
-        contador +=1
-
-    contador_campo +=1
-
-for j in lista:
-    print(j)    

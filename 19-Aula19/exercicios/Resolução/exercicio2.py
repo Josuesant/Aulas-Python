@@ -1,6 +1,17 @@
 # Aula 19 - 04-12-2019
 # Lista com for e metodos
 
+# 1 - Usando estas 2 listas, fazer uma função que crie retorne uma lista com dicionários
+# com os dados das pessoas com idade maior ou igua a 18 anos
+#
+#  2 - Imprima a lista resultante com um for imprimindo um dicionário em cada linha 
+# (não prescisa usar o f-string, .format())
+#
+#  3 - Imprima a lista resultante com um for imprimindo um dicionário em cada linha 
+# (usando o f-string)
+
+
+
 cab = ['nome', 'telefone', 'email','idade']
 
 pess   = [  ['Alex'   ,'Paulo'  ,'Pedro'  ,'Mateus' ,'Carlos' ,'João'   ,'Joaquim'],
@@ -47,14 +58,4 @@ for i in lista:
 
 
 
-
-
-# 1 - Usando estas 2 listas, fazer uma função que crie retorne uma lista com dicionários
-# com os dados das pessoas com idade maior ou igua a 18 anos
-#
-#  2 - Imprima a lista resultante com um for imprimindo um dicionário em cada linha 
-# (não prescisa usar o f-string, .format())
-#
-#  3 - Imprima a lista resultante com um for imprimindo um dicionário em cada linha 
-# (usando o f-string)
 

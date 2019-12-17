@@ -22,6 +22,3 @@ lista = [
 # não tenha produto cadastrado o programa se encerra.
 #
 
-
-
-
