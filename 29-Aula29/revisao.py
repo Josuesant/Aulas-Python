@@ -1,7 +1,7 @@
 #--- Lista de passageiros que estão no terminal, e lista de avião vazia, pronta para receber os passageiros.
-terminal = ['Presidiário','Policial' , 'Piloto', 'Oficial1', 'Oficial2', 'Chefe', 'Comissária1','Comissária2']
+from revisao2 import *
 aviao = []
-
+terminal = txt_terminal()
 #--- Logica;/Função para mostrar/retornar a logistica de como os passageiros vão embar no avião. 
 def transporte():                
 
@@ -61,5 +61,6 @@ def mostrar(terminal,aviao):
                     menu()
     except IndexError:
         print('Todos estão no avião.')
-
+    
 mostrar(terminal,aviao)
+txt_aviao(aviao)
