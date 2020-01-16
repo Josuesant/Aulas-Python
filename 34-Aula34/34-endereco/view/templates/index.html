@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pessoas</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>LOGRADOURO</th>
+                <th>COMPLEMENTO</th>
+                <th>NUMERO</th>
+                <th>BAIRRO</th>
+                <th>CIDADE</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for e in lista %}
+            <tr>
+                <td>{{ e.ID}}</td>
+                <td>{{ e.LOGRADOURO}}</td>
+                <td>{{ e.COMPLEMENTO}}</td>
+                <td>{{ e.NUMERO}}</td>
+                <td>{{ e.BAIRRO}}</td>
+                <td>{{ e.CIDADE}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <divt align="center">
+        <img src="C:/Users/900172/Documents/JosueHBSIS/GitHub/Aulas-Python/34-Aula34/34-endereco/view/static/universo.jpg" alt="imagem" >
+    </div>
+</body>
+</html>
