@@ -5,8 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{titulo_app}} - Cadastrar</title>
+    <link rel="stylesheet" href="../static/estilo.css">
 </head>
 <body>
-    
+    {{pessoa[0]}}
+    <div class="conteudo">
+        <form action="/salvar" method="get">
+            <div class="descricoes"> 
+                <label for="nome">Nome:</label>
+            </div>
+            <input type="text" name="nome" id="nome" placeholder="Digite o nome" value="{{pessoa[1]}}"> <br/>
+            <div class="descricoes"> 
+                <label for="sobrenome">Sobrenome:</label>
+            </div>
+            <input type="text" name="sobrenome" id="sobrenome" value="{{pessoa[2]}}"> <br/>
+            <div class="descricoes"> 
+                <label for="idade">Idade:</label>
+            </div>
+            <input type="text" name="idade" id="idade"> <br/>
+            <div class="descricoes"> 
+                <label for="logradouro">Logradouro:</label>
+            </div>
+            <input type="text" name="logradouro" id="logradouro"> <br/>
+            <div class="descricoes"> 
+                <label for="numero">Numero:</label>
+            </div>
+            <input type="text" name="numero" id="numero"> <br/>
+            <div class="descricoes"> 
+                <label for="complemento">Complemento:</label>
+            </div>
+            <input type="text" name="complemento" id="complemento"> <br/>
+            <div class="descricoes"> 
+                <label for="bairro">Bairro:</label>
+            </div>
+            <input type="text" name="bairro" id="bairro"> <br/>
+            <div class="descricoes"> 
+                <label for="cidade">Cidade:</label>
+            </div>
+            <input type="text" name="cidade" id="cidade"> <br/>
+            <div class="descricoes"> 
+                <label for="cep">CEP:</label>
+            </div>
+            <input type="text" name="cep" id="cep"> <br/>
+
+            <hr/>
+            <input type="submit" value="Salvar" class="salvar">
+            <a href="/cadastrar" class="limpar">Limpar</a>
+        </form>
+    </div>
 </body>
 </html>
