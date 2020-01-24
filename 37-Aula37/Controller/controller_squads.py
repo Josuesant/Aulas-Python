@@ -11,41 +11,33 @@ class Controller_squads ():
     controller_linguagemBackEnd = Controller_linguagemBackEnd()
     controller_sgbds = Controller_sgbds
 
-    def Creater (self):
-        return self.dao.Create()
+    def Creater (self, squads:Squads):
+        self.dao.Create(squads)
 
     def Read (self):  
-        lista_squads = []
-        lista_tuplas = self.dao.squads_todos()
-        for p in lista_tuplas:
-            squads = squads()
-            
-            lista_squads.append(squads)
-        return lista_squads
+        tupla = self.dao.Read
+        squads = Squads(tupla[0], tupla[1], tupla[2], tupla[3])
+        squads.id_LinguagemBackEnd = tupla[4]
+        squads.id_FrameworkFrontEnd = tupla[5]
+        squads.id_SGBDs = tupla[6]
+        return squads
 
     def Read_id(self, id):
-        p = self.dao.buscar_por_id(id)
-        pessoa = Pessoa()
-        pessoa.id =  p[0]
-        pessoa.nome = p[1]
-        pessoa.sobrenome = p[2]
-        pessoa.idade = p[3]
-        pessoa.endereco.id = p[5]
-        pessoa.endereco.logradouro = p[6]
-        pessoa.endereco.numero = p[7]
-        pessoa.endereco.complemento = p[8]
-        pessoa.endereco.bairro = p[9]
-        pessoa.endereco.cidade = p[10]
-        pessoa.endereco.cep = p[11]
-        return pessoa
+        tupla = self.dao.Read_id(id)
+        squads = Squads(tupla[0], tupla[1], tupla[2])
+        squads.id_LinguagemBackEnd = tupla[3]
+        squads.id_FrameworkFrontEnd = tupla[5]
+        squads.id_SGBDs = tupla[6]
+        return squads
 
-    def salvar(self, squads: Squads): 
-        squads.id_FrameworkFrontEnd.   
+    # def salvar(self, squads: Squads): 
+    #     salvar = Squads_dao
+    #     salvar.Create(squads:Squads)   
 
     def Update (self, squads: Squads):
-        return 
+        self.dao.Update (squads) 
 
-    def Delete ():
-        return              
+    def Delete (self, id):
+        self.dao.Delete(id)              
 
     

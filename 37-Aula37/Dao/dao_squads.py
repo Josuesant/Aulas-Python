@@ -43,12 +43,19 @@ class Squads_dao:
         return resultado
 
     #---- Função para Ler/Listar por id
-    def Read_id(self, id):
-        comando = f"SELECT * FROM tb_squads AS P LEFT JOIN tb_LinguagemBackEnd AS E ON P.ENDERECO_ID = E.ID WHERE P.ID = {id}"
-        self.cursor.execute(comando)
-        resultado = self.cursor.fetchone()
-        return resultado    
-
+    # def Read_id(self, id):
+    #     comando = f"SELECT * FROM tb_squads
+    #         left JOIN tb_LinguagemBackEnd
+    #         ON tb_squads.id_LinguagemBackEnd = tb_LinguagemBackEnd.id_BackEnd 
+    #         left JOIN tb_FrameworkFrontEnd
+    #         ON tb_squads.id_FrameworkFrontEnd = tb_FrameworkFrontEnd.id_FrontEnd
+    #         left JOIN tb_SGBDs
+    #         ON tb_squads.id_SGBDs = tb_SGBDs.id_SGBDs
+    #         WHERE id_time = {id}"
+    #     self.cursor.execute(comando)
+    #     resultado = self.cursor.fetchone()
+    #     return resultado    
+        
     #---- Função para Alterar
     def Update (self, squads:Squads):
         comando = f""" UPDATE tb_squads
