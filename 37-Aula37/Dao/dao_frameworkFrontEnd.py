@@ -1,13 +1,17 @@
+
+import sys
+sys.path.append('C:/Users/900172/Documents/JosueHBSIS/GitHub/Aulas-Python/37-Aula37')
+
 import MySQLdb 
 from Model.frameworkFrontEnd import FrameworkFrontEnd
 
 #---- Criação da classe FrameworkFrontEnd_dao
-class FrameworkFrontEnd_dao:
+class FrameworkFrontEnd_dao ():
     conexao = MySQLdb.connect(host='mysql.padawans.dev', database='padawans14', user='padawans14', passwd='jm2019')
     cursor = conexao.cursor()
 
     #---- Função para Inserir/Criar  
-    def Create (self):
+    def Create (self, frontend:FrameworkFrontEnd):
         comando = f""" INSERT INTO tb_FrameworkFrontEnd
         (
         id_FrontEnd
@@ -16,15 +20,16 @@ class FrameworkFrontEnd_dao:
         )
         VALUES
         (
-            {frameworkFrontEnd.id_FrontEnd},
-            '{frameworkFrontEnd.FrameworkFrontEnd}',
-            '{frameworkFrontEnd.FrontEnd_desc}'
+             {frontend.id_FrontEnd}
+            ,'{frontend.FrameworkFrontEnd}'
+            ,'{frontend.FrontEnd_desc}'
 
         )"""
         self.cursor.execute(comando)
         self.conexao.commit()
         id_inserido = self.cursor.lastrowid
         return id_inserido
+        
 
     #---- Função para Ler/Listar  
     def Read (self):
@@ -41,13 +46,13 @@ class FrameworkFrontEnd_dao:
         return resultado    
 
     #---- Função para Alterar
-    def Update (self, frameworkFrontEnd: FrameworkFrontEnd):
+    def Update (self, frontend:FrameworkFrontEnd):
         comando = f""" UPDATE tb_FrameworkFrontEnd
         SET
-            id_FrontEnd = {frameworkFrontEnd.id_FrontEnd},
-            FrameworkFrontEnd ='{frameworkFrontEnd.FrameworkFrontEnd}',
-            FrontEnd_desc = '{frameworkFrontEnd.FrontEnd_desc}',
-        WHERE ID = {frameworkFrontEnd.id}
+            id_FrontEnd = {frontend.id_FrontEnd},
+            FrameworkFrontEnd ='{frontend.FrameworkFrontEnd}',
+            FrontEnd_desc = '{frontend.FrontEnd_desc}',
+        WHERE ID = {frontend.id}
         """
         self.cursor.execute(comando)
         self.conexao.commit()

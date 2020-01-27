@@ -2,10 +2,10 @@ from Dao.dao_linguagemBackEnd import LinguagemBackEnd_dao
 from Model.linguagemBackEnd import LinguagemBackEnd
 
 class Controller_linguagemBackEnd (): 
-    dao = LinguagemBackEnd_dao
+    dao = LinguagemBackEnd_dao ()
 
-    def Creater (self backend: LinguagemBackEnd):
-        return self.dao.Create(backend)
+    def Creater (self, backend: LinguagemBackEnd):
+        self.dao.Create(backend)
 
     def Read (self):  
         tupla = self.dao.Read

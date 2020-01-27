@@ -4,8 +4,8 @@ from Model.sGBDs import SGBDs
 class Controller_sgbds (): 
     dao = SGBDs_dao()
 
-    def Creater (self sgbds: SGBDs):
-        return self.dao.Create(sgbds)
+    def Creater (self, sgbds: SGBDs):
+        self.dao.Create(sgbds)
 
     def Read (self):  
         tupla = self.dao.Read
