@@ -34,24 +34,33 @@ Nicole = PHP, React, MsSqlServer
 
 Existem várias squads que utilizam a mesma linguagem de backend porém utilizam banco de dados e framework frontend distintos. 
  '''
+
 from itertools import product
 
-class Distribuicao: 
-    def __init__ (self):
+
+class Distribuicao:
+
+    def __init__(self):
         self.banco_dados = ['MsSqlServer', 'PostgreSQL', 'MongoDb']
-        self.backend  =['Python', 'Java', 'PHP']
-        self.frontend = ['React', 'Angular', 'Vue'] 
+        self.backend = ['Python', 'Java', 'PHP']
+        self.frontend = ['Reagir', 'Angular', 'Vue']
         self.Mateus = ['Python', 'Angular', 'MongoDb']
         self.Tiago = ['Java', 'Vue', 'PostgreSQL']
-        self.Nicole = ['PHP', 'React', 'MsSqlServer']
+        self.Nicole = ['PHP', 'Reagir', 'MsSqlServer']
 
-    def Squads (self):
+    def Squads(self):
         banco = self.banco_dados
-        front = self.frontend
-        squads = squads(banco, front repeat=3) # aqui e onde tens de especificar o numero de chars que cada combinacao tenha
-        for subset in squads:
-            print(subset) # tuple retornado com uma combinacao por loop
-            permsList.append(subset)
-        print(permsList)
-       
+        backend = self.backend
+        frontend = self.frontend
+        squads = []
 
+        genComb = product(backend, banco, frontend,
+                          repeat=1)  # aqui é especificamos o numero de chars que cada combinacao tenha
+        for subset in genComb:
+            print(subset)
+            squads.append(subset)
+        print(squads)
+
+
+distribuicao = Distribuicao()
+print(distribuicao.Squads())
